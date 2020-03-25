@@ -22,7 +22,6 @@ global.BASEURL = 'https://terminalizer.com';
 // Dependency Injection
 di.require('chalk');
 di.require('async');
-di.require('request');
 di.require('death');
 di.require('path');
 di.require('os');
@@ -71,7 +70,6 @@ yargs.command(commands.init)
      .command(commands.record)
      .command(commands.play)
      .command(commands.render)
-     .command(commands.share)
      .command(commands.generate)
 
 debugger;
